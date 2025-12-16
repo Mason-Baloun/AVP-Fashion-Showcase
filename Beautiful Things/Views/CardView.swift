@@ -189,8 +189,7 @@ struct CardView: View {
     
     // Loads the USDZ file from the main bundle within folder "USDZ".
     private func loadLocalUSDZFile() {
-        let folderName = "USDZ"
-        guard let bundleURL = Bundle.main.url(forResource: beautifulThing.filename, withExtension: "usdz", subdirectory: folderName) else {
+        guard let bundleURL = Bundle.main.url(forResource: beautifulThing.filename, withExtension: "usdz") else {
             print("Error: USDZ file not found in main bundle.")
             return
         }
