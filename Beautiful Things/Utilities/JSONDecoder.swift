@@ -12,7 +12,7 @@ struct BeautifulThingsWrapper: Codable {
 }
 
 func loadBeautifulThings() -> [BeautifulThing] {
-    guard let url = Bundle.main.url(forResource: "Beautiful_Things_Sample", withExtension: "json") else {
+    guard let url = Bundle.main.url(forResource: "Aura_Fashion_Sunglasses", withExtension: "json") else {
         fatalError("JSON file not found")
     }
 

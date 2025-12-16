@@ -17,7 +17,7 @@ struct LaunchView: View {
     @State private var animationState = AnimationState.initial
     @State private var displayedText = "" // New state variable for the animated text.
     
-    let fullText = "Hello Beautiful" // The full text to display.
+    let fullText = "Aura Fashion" // The full text to display.
     let typingAnimationDelay = 0.15 // Delay between each character.
     
     var body: some View {

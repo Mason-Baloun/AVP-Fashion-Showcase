@@ -14,13 +14,12 @@ struct MenuView: View {
     var body: some View {
         NavigationSplitView {
             List(selection: $selectedCategory) {
-                Section(header: Text("For You").foregroundColor(.gray)) {
+                Section(header: Text("Trending").foregroundColor(.gray)) {
                     NavigationLink("Featured", value: "Featured")
-                    NavigationLink("Animated", value: "Animated")
                     NavigationLink("New", value: "New")
                 }
                 
-                Section(header: Text("Categories").foregroundColor(.gray)) {
+                Section(header: Text("Collections").foregroundColor(.gray)) {
                     // Generate a list of categories for each unique category in the dataset.
                     ForEach(uniqueCategories.sorted(), id: \.self) { category in
                         NavigationLink(category, value: category)
@@ -28,14 +27,16 @@ struct MenuView: View {
                 }
             }
             .listStyle(SidebarListStyle())
-            .navigationTitle("Beautiful Things")
+            .navigationTitle("Aura Fashion")
         } detail: {
             VStack {
                 HStack {
-                    Text(" ")
-                        .font(.system(size: 100))
+                    Image("AF")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40)
                         .padding(.trailing, 8)
-                    Text("Pinch, hold, and drag to bring Things into your world.")
+                    Text("Try on sunglasses in AR - pinch, hold, and drag to bring fashion into your world.")
                         .font(.largeTitle)
                         .fontWeight(.medium)
                 }

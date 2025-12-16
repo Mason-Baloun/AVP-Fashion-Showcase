@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31E0E0862E04AFE600EAFACC /* Logo in Resources */ = {isa = PBXBuildFile; fileRef = 31E0E0852E04AFE600EAFACC /* Logo */; };
+		31E0E0882E04B05B00EAFACC /* Sunglasses USDZ in Resources */ = {isa = PBXBuildFile; fileRef = 31E0E0872E04B05B00EAFACC /* Sunglasses USDZ */; };
 		79B205DB2B992A92006FB2ED /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B205DA2B992A92006FB2ED /* LoadingView.swift */; };
 		D40F4C5C2BA0BCE800EED19E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D40F4C5B2BA0BCE800EED19E /* README.md */; };
 		D40F4C5E2BA0BDDA00EED19E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D40F4C5D2BA0BDDA00EED19E /* LICENSE.txt */; };
@@ -21,8 +23,7 @@
 		D4B70A9E2B87D77C00419269 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B70A9D2B87D77C00419269 /* MainView.swift */; };
 		D4B70AA02B87D7C000419269 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B70A9F2B87D7C000419269 /* SearchView.swift */; };
 		D4B70AA22B88F9DE00419269 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B70AA12B88F9DE00419269 /* LaunchView.swift */; };
-		D4D402FC2B9F771A008E2164 /* USDZ in Resources */ = {isa = PBXBuildFile; fileRef = D4D402FB2B9F771A008E2164 /* USDZ */; };
-		D4DB42682B9F66BD008C18E7 /* Beautiful_Things_Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = D4DB42672B9F66BD008C18E7 /* Beautiful_Things_Sample.json */; };
+		D4DB42682B9F66BD008C18E7 /* Aura_Fashion_Sunglasses.json in Resources */ = {isa = PBXBuildFile; fileRef = D4DB42672B9F66BD008C18E7 /* Aura_Fashion_Sunglasses.json */; };
 		D4DB426A2B9F6764008C18E7 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB42692B9F6764008C18E7 /* JSONDecoder.swift */; };
 		D4DB426C2B9F6896008C18E7 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DB426B2B9F6896008C18E7 /* DebugView.swift */; };
 		D4ED12F42B891AD600325367 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED12F32B891AD600325367 /* AboutView.swift */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31E0E0852E04AFE600EAFACC /* Logo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Logo; sourceTree = "<group>"; };
+		31E0E0872E04B05B00EAFACC /* Sunglasses USDZ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Sunglasses USDZ"; sourceTree = "<group>"; };
 		79B205DA2B992A92006FB2ED /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		D40F4C5B2BA0BCE800EED19E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D40F4C5D2BA0BDDA00EED19E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -46,13 +49,16 @@
 		D4B70A9D2B87D77C00419269 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D4B70A9F2B87D7C000419269 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		D4B70AA12B88F9DE00419269 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
-		D4D402FB2B9F771A008E2164 /* USDZ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = USDZ; sourceTree = "<group>"; };
-		D4DB42672B9F66BD008C18E7 /* Beautiful_Things_Sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Beautiful_Things_Sample.json; sourceTree = "<group>"; };
+		D4DB42672B9F66BD008C18E7 /* Aura_Fashion_Sunglasses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Aura_Fashion_Sunglasses.json; sourceTree = "<group>"; };
 		D4DB42692B9F6764008C18E7 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
 		D4DB426B2B9F6896008C18E7 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		D4ED12F32B891AD600325367 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D4ED12F52B89362000325367 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		31C8CE032EF1C12700608F47 /* USDZ */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = USDZ; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D48580C52B85365F00542BCB /* Frameworks */ = {
@@ -105,9 +111,10 @@
 				D40F4C5B2BA0BCE800EED19E /* README.md */,
 				D40F4C5D2BA0BDDA00EED19E /* LICENSE.txt */,
 				D48580CA2B85365F00542BCB /* Beautiful Things */,
-				D4DB42672B9F66BD008C18E7 /* Beautiful_Things_Sample.json */,
-				D4D402FB2B9F771A008E2164 /* USDZ */,
+				D4DB42672B9F66BD008C18E7 /* Aura_Fashion_Sunglasses.json */,
 				D48580C92B85365F00542BCB /* Products */,
+				31E0E0852E04AFE600EAFACC /* Logo */,
+				31E0E0872E04B05B00EAFACC /* Sunglasses USDZ */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +136,7 @@
 				D48580D72B85366000542BCB /* Assets.xcassets */,
 				D48580DC2B85366000542BCB /* Info.plist */,
 				D48580D92B85366000542BCB /* Preview Content */,
+				31C8CE032EF1C12700608F47 /* USDZ */,
 			);
 			path = "Beautiful Things";
 			sourceTree = "<group>";
@@ -155,6 +163,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				31C8CE032EF1C12700608F47 /* USDZ */,
 			);
 			name = "Beautiful Things";
 			packageProductDependencies = (
@@ -203,11 +214,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E0E0882E04B05B00EAFACC /* Sunglasses USDZ in Resources */,
 				D40F4C5E2BA0BDDA00EED19E /* LICENSE.txt in Resources */,
 				D48580D82B85366000542BCB /* Assets.xcassets in Resources */,
-				D4DB42682B9F66BD008C18E7 /* Beautiful_Things_Sample.json in Resources */,
+				D4DB42682B9F66BD008C18E7 /* Aura_Fashion_Sunglasses.json in Resources */,
 				D40F4C5C2BA0BCE800EED19E /* README.md in Resources */,
-				D4D402FC2B9F771A008E2164 /* USDZ in Resources */,
+				31E0E0862E04AFE600EAFACC /* Logo in Resources */,
 				D48580DB2B85366000542BCB /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Beautiful Things/Preview Content\"";
-				DEVELOPMENT_TEAM = 79K6CBNA77;
+				DEVELOPMENT_TEAM = 22K76855QG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -394,7 +406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Beautiful Things/Preview Content\"";
-				DEVELOPMENT_TEAM = 79K6CBNA77;
+				DEVELOPMENT_TEAM = 22K76855QG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";

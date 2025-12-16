@@ -117,9 +117,30 @@ struct CardView: View {
             // Model display with improved gesture handling.
             VStack {
                 if localFileURL != nil {
-                    Image(uiImage: usdzImage!)
-                            .resizable()
-                            .scaledToFit()
+                    if let usdzImage = usdzImage {
+                        Image(uiImage: usdzImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 300, height: 300)
+                                .rotationEffect(.degrees(wiggle ? -1 : 1), anchor: .center)
+                                .animation(.easeInOut(duration: 0.2).repeatCount(6, autoreverses: true), value: wiggle)
+                                .offset(x: dragOffset.width, y: dragOffset.height)
+                                .onDrag {
+                                    let name = beautifulThing.title
+                                    let itemProvider = NSItemProvider(contentsOf: localFileURL) ?? NSItemProvider()
+                                    let userActivity = NSUserActivity(activityType: "com.apple.cocoa.touch.3dmodel")
+                                userActivity.isEligibleForHandoff = true
+                                userActivity.isEligibleForSearch = true
+                                userActivity.isEligibleForPublicIndexing = true
+                                userActivity.title = name
+                                itemProvider.registerObject(userActivity, visibility: .all)
+                                return itemProvider
+                            }
+                    } else {
+                        // Show sunglasses icon as fallback
+                        Image(systemName: "sunglasses")
+                            .font(.system(size: 120))
+                            .foregroundColor(.primary)
                             .frame(width: 300, height: 300)
                             .rotationEffect(.degrees(wiggle ? -1 : 1), anchor: .center)
                             .animation(.easeInOut(duration: 0.2).repeatCount(6, autoreverses: true), value: wiggle)
@@ -138,6 +159,7 @@ struct CardView: View {
                             .highPriorityGesture(DragGesture().onEnded { value in
                                 self.isPreviewVisible = true
                             })
+                    }
                 } else {
                     ProgressView()
                 }
@@ -178,7 +200,8 @@ struct CardView: View {
         if let image = UIImage(named: beautifulThing.image) {
             self.usdzImage = image
         } else {
-            print("Error: Image not found in main bundle.")
+            // Set to nil so the sunglasses icon will be shown
+            self.usdzImage = nil
         }
     }
 }

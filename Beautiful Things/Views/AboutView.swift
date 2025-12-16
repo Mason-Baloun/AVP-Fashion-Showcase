@@ -12,16 +12,20 @@ struct AboutView: View {
         @Environment(\.openURL) var openURL
         
         VStack {
-            HStack {
-                Text("𖡼")
-                    .font(.system(size: 60))
-                Text("Beautiful Things")
+            VStack(spacing: 20) {
+                Image("AF")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+                
+                Text("Aura Fashion")
                     .font(.largeTitle)
                     .fontWeight(.bold)
             }
             
-            Text("Beautiful Things is designed to fill your world with Beauty.\n")
+            Text("Aura Fashion brings you the finest collection of 3D sunglasses.\nExplore, try on, and fall in love with fashion.\n")
                 .fontWeight(.semibold)
+                .multilineTextAlignment(.center)
             
             HStack(spacing: 0) {
                 Text("Made with Love by ")
@@ -49,7 +53,7 @@ struct AboutView: View {
             }
             .padding(.vertical, 25)
             
-            Text("This app is independently developed using artistic representations\nfor educational and entertainment purposes only.\nWe hope this app brings you joy.")
+            Text("This app showcases premium sunglasses collections in AR\nfor fashion enthusiasts and style explorers.\nWe hope this app inspires your next fashion choice.")
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
         }
